@@ -1,4 +1,4 @@
-import { hideModal, showModal } from './modal';
+import { hideModal, showModal } from './modal.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('survey-form');
