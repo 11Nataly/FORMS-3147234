@@ -33,7 +33,8 @@ h2 {
 }
 
 /* Etiquetas */
-label, p {
+label,
+p {
   display: block;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -93,7 +94,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #c3bdb7;
 }
-
 
 .modal {
   position: fixed;
