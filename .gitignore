@@ -1,0 +1,4 @@
+#ignorar los modulos para cuando se suban archivos
+node_modules/
+npm-debug.log
+package-lock.json

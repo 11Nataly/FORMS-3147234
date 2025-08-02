@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fpormulario</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
     <h1 class="titulo">Formulario SENA V1</h1>
     <br><br>
     <h3>GRACIAS POR DEJAR TUS DATOS</h3>
     <div class="contenedor">
-        <form action="POST">
+        <form id="survey-form">
             <label for="Name">Name: </label>
-        <br>
-        <input type="text" name="Name" placeholder="Please enter your name">
-        <br>
-        <label for="Email">Email: </label>
-        <br>
-        <input type="text" name="Email" placeholder="Please enter your Email">
-        <br>
-        <label for="Age">Age: </label>
-        <br>
-        <input type="text" name="Age" placeholder="Please enter your Age">
-        <br>
-        <label for="option">choose an option</label>
-        <br>
-        <select name="option" id="option" placeholder="Please choose an option">
-            <option value="" disabled selected hidden>Select One Option</option>
-            <option value="1">a</option>
-            <option value="1">b</option>
-            <option value="1">c</option>
-        </select>
+            <br>
+            <input type="text" name="Name" placeholder="Please enter your name">
+            <br>
+            <label for="Email">Email: </label>
+            <br>
+            <input type="email" name="Email" placeholder="Please enter your Email">
+            <br>
+            <label for="Age">Age: </label>
+            <br>
+            <input type="number" name="Age" placeholder="Please enter your Age">
+            <br>
+            <label for="option">choose an option</label>
+            <br>
+            <select name="option" id="option" placeholder="Please choose an option">
+                <option value="" disabled selected hidden>Select One Option</option>
+                <option value="1">a</option>
+                <option value="1">b</option>
+                <option value="1">c</option>
+            </select>
 
-        <br>
-        <label for="option">do you want to sing?
-        <br>
-        <input type="radio" name="option" value="">
-        Yes
-        <br>
-        <input type="radio" name="option" value="">
-        No
-        <br>
-        <input type="radio" name="option" value="">
-        Yes
-        <br>
-        </label>
-        <br>
+            <br>
+            <label for="option">do you want to sing?
+                <br>
+                <input type="radio" name="option" value="">
+                Yes
+                <br>
+                <input type="radio" name="option" value="">
+                No
+                <br>
+                <input type="radio" name="option" value="">
+                Yes
+                <br>
+            </label>
+            <br>
 
-        <label for="option">select your favorite singer</label>
-        <br>
-        <select name="option" id="option" placeholder="Please choose an option">
-            <option value="1">Sabrina Carpenter</option>
-            <option value="1">Olivia Rodrigo</option>
-            <option value="1">Shakira</option>
-        </select>
-        <br>
-        
-        <label for="option">who do you want to sing with?
-        <br>
-        <input type="checkbox" name="option" value="">
-        family
-        <br>
-        <input type="checkbox" name="option" value="">
-        friends
-        <br>
-        <input type="checkbox" name="option" value="">
-        pets
-        <br>
-        </label>
-        <br>
+            <label for="option">select your favorite singer</label>
+            <br>
+            <select name="option" id="option" placeholder="Please choose an option">
+                <option value="1">Sabrina Carpenter</option>
+                <option value="1">Olivia Rodrigo</option>
+                <option value="1">Shakira</option>
+            </select>
+            <br>
+
+            <label for="option">who do you want to sing with?
+                <br>
+                <input type="checkbox" name="option" value="">
+                family
+                <br>
+                <input type="checkbox" name="option" value="">
+                friends
+                <br>
+                <input type="checkbox" name="option" value="">
+                pets
+                <br>
+            </label>
+            <br>
+
+            <label for="comments">Any comments suggestions?</label>
+            <br>
+            <textarea name="comments" id="comments"></textarea>
 
 
+            <br>
+            <input type="submit" id="submit" value="Submit">
+           
 
-
-
-
-        <br>
-        <button type="submit">submit</button>
-        
-        
-        
-
-        
+        </form>
+        </div>
     </div>
 
+        <!--clases modales-->
+        <div id="modal-success" class="modal hidden">
+            <div class="modal-content">
+                    <h2>¡Datos enviados con exito!</h2>
+                    <button id="close-modal">cerrar</button>
+            </div>
+            
 </body>
+
+<script type="module"  src="main.js"></script>
+
 </html>
